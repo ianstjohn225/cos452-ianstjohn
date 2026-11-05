@@ -145,7 +145,8 @@
       // TODO(student) (b): move the light to a new direction. In a comment, say
       // which face is now brightest and why.
       gl.uniform3f(uLight, 0.0, 0.0, 0.0);   // direction TO the light
-      // the face direcly away from the camera is being illuminated, so it looks like no faces are being illuminated 
+      // the face direcly away from the camera is being illuminated, so it looks like no faces are being illuminated
+      // this is because the diffuse, max(dot(N, L), 0), is lagrest when facing away from the camera 
       // TODO(student) (c): tune the ambient floor so shadowed faces are dim but
       // not black. In a comment, describe what 0.0 and 1.0 look like.
       gl.uniform1f(uAmbient, 0.5);
