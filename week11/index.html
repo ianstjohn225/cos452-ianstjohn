@@ -153,7 +153,7 @@
       gl.uniform1f(uShininess, 256.0); 
       //Chnaging the shininess changes how reflective the material of the cube seems, by modifying how light interacts with the surface. 
       //Bringing it all the way down to 0 makes the cube a flat matte and the light illumates the closes face evenly, 
-      //increasing the shininess cuases the light to illuminate the face differently and a highlight forms where the light is closest to the face.
+      //increasing the shininess cuases the light to illuminate the face differently and a highlight forms where the light is closest to the face, and the higher the shininess the smaller, more mirror like, the highlight.
 
       gl.clearColor(0.10, 0.12, 0.16, 1.0);
       gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
